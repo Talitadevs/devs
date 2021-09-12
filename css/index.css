@@ -1,0 +1,110 @@
+/* Fundo */
+body{
+    background: url(../imagens/bkg1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+
+/* Seção introdução */
+.intro{
+    font-size: 35px;
+}
+
+/* Ranking */
+.ranking_dad{
+    width: 90%;
+}
+.ranking{
+    border: none;
+    background: linear-gradient(90deg,rgba(246, 2, 2, 0.5),rgba(0,0,0,0));
+    color: white; 
+}
+#ranking_2nt, #ranking_3rd{
+    font-size: 4rem;
+    padding-top:5vh;  
+}
+#ranking_1st{
+    font-size: 5.5rem;
+    margin-bottom: 1vh;
+}
+
+/* Botao */
+.botao{
+    margin: 0 auto;
+}
+.text_botao{
+    font-size: 35px;
+}
+
+/* Insignias */
+.insignia{
+    margin: 0 auto;
+}
+.cardInsignia{
+    margin: 0 auto;
+}
+
+.card-subtitle{
+    font-size: 0.85rem;
+}
+
+
+.container-fluid .box {
+    width: 14.375rem;
+    height: 14.375rem;
+    perspective: 62.5rem;
+}
+
+.container-fluid .box .body {
+    height: 100%;
+    transform-style: preserve-3d;/*faz aparecer apenas o card da frente*/
+    transition: 0.9s ease;/*faz transição de acordo com este tempo*/
+}
+
+.container-fluid .box .body .imgContainer {
+    height: 100%;
+}
+
+.container-fluid .box .body .imgContainer img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:contain;/*contain mostra 100% da img de acordo com o espaço*/
+}
+
+.container-fluid .box .body .content {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(19, 19, 19, 0.61);
+    border-radius: 15px;
+    transform-style: preserve-3d;/*unifica a img de trás com a div*/
+    transform: rotateY(180deg);/*faz ficar na parte de trás o que é de trás*/
+}
+
+.container-fluid .box:hover .body {
+    transform: rotateY(180deg)
+}
+
+.container-fluid .box .body .content div {
+    transform-style: preserve-3d;
+    margin-top: 1rem;
+    padding: 1.5rem;/*padding do texto do verso*/
+    transform: translateZ(6.25rem);
+}
+/* .bg_box1, .bg_box2,.bg_box3, .bg_box4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)) !important;
+} */
+.textInsignia{
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px;
+}
+
